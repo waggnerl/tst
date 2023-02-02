@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="game-board">
+      <div class="header-container">
+        <div class="score">
+          <p>1231s</p>
+        </div>
+        <div class="heart-container">
+          <img class="heart" src="docs/assets/eart_lifes.gif" />
+          <img class="heart" src="docs/assets/eart_lifes.gif" />
+          <img class="heart" src="docs/assets/eart_lifes.gif" />
+          <img class="heart" src="docs/assets/eart_lifes.gif" />
+          <img class="heart" src="docs/assets/eart_lifes.gif" />
+        </div>
+        <button>Stop</button>
+      </div>
+      <div class="container-start">
+        <p class="title">RACE TO <span>INFINITY</span></p>
+        <button id="start-button"><p>START GAME</p></button>
+        <p id="difficulty-text">SELECT THE GAME <span>DIFFICULTY</span></p>
+        <div class="game-difficulty">
+          <button onclick="checkGameDifficulty(10)">
+            <p>HARD MODE</p>
+          </button>
+          <button onclick="checkGameDifficulty(5)">
+            <p>MEDIUM MODE</p>
+          </button>
+          <button onclick="checkGameDifficulty(3)">
+            <p>EASY MODE</p>
+          </button>
+        </div>
+        <img
+          src="./docs/assets/instructions.png"
+          alt="To Move Around The Room, Use The W A S D"
+        />
+      </div>
+      <canvas id="canvas" width="800" height="700"></canvas>
+    </div>
+    <script src="./scripts/component.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
